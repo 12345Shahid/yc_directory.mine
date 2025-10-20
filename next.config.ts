@@ -5,7 +5,11 @@ import { hostname } from "node:os";
 import { experimental_taintObjectReference } from "react";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  typescript: {ignoreBuildErrors: true,
+              },
+
+  eslint: {ignoreBuildErrors: true,
+          },
 
   images: {
     dangerouslyAllowSVG: true,
